@@ -1,0 +1,100 @@
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  .photobanner {
+    position: relative;
+    height: 233px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 100%;
+  }
+
+  .photobanner img {
+    margin: 0px 25px;
+    box-shadow: 2px 2px 8px #8a8a8a;
+  }
+
+  .photobanner {
+    animation: bannermove 50s linear infinite;
+  }
+  /* .carousel-control-next-icon, .carousel-control-prev-icon{
+    display:none;
+  } */
+  .carousel-indicators li
+  {
+    display: none;
+  }
+  /* .carousel-control-next-icon, .carousel-control-prev-icon{
+    visibility:hidden;
+  } */
+  .carousel-indicators li { visibility: hidden; }
+  @keyframes bannermove {
+    from {
+      left: 2700px;
+    }
+    to {
+      left: -2700px;
+    }
+  }
+
+  .image1{
+    width: 120px;
+  }
+  .image2{
+    width: 110px;
+  }
+  .image3{
+    width: 140px;
+  }
+  .image4{
+    width: 190px;
+  }
+  .redux-image{
+    width: 145px;
+  }
+  .firebase-image1{
+    width: 280px;
+    margin-top: 20px;
+  }
+  .solidity-image1{
+    width: 160px;
+  }
+  .slider-margin{
+    margin-top: 150px;
+    margin-bottom: 40px;
+  }
+  @media(max-width:480px){
+    .slider-margin{
+      margin-top: 50px;
+      margin-bottom: 40px;
+    }
+    .image1{
+      width: 70px;
+    }
+    .image2{
+      width: 60px;
+    }
+    .image3{
+      width: 80px;
+    }
+    .image4{
+      width: 130px;
+    }
+    .redux-image{
+      width: 85px;
+    }
+    .firebase-image1{
+      width: 280px;
+      margin-top: 20px;
+    }
+    .solidity-image1{
+      width: 160px;
+    }
+  }
+  @media(max-480px){
+    .slider-margin{
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+  }

@@ -1,0 +1,123 @@
+.main-image{
+    background-image: url("../../Assets/giphy (2).gif"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100VH; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins:ital@0;1&family=Roboto:wght@300;400&family=Rubik&family=Rubik+Glitch&display=swap');
+.logobrand{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+.arbitech-box{
+    background-color: #cccccc;
+    color: black;
+    padding: 0px 30px;
+    font-weight: 1000;
+    font-size: 18px;
+    margin-top: -5px;
+    letter-spacing: 3px;
+    font-family: 'El Messiri', sans-serif;
+    border-radius: 40px;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+/* body {
+  background: #000;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+} */
+/* #primary {
+  position: absolute;
+  top: 0;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+} */
+/* #primary li {
+  margin: 0 20px;
+  position: relative;
+} */
+.nav-text {
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+  font-family: 'Open Sans';
+  font-size: 22px;
+  line-height: 1;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #23abd4, #23abd4 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  transition: all 0.3s ease-in-out;
+}
+.nav-text:before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 3px;
+  bottom: 5px;
+  left: 0;
+  bottom: -3px;
+  z-index: 0;
+  position: absolute;
+  background: #23abd4;
+  transition: all 0.3s ease-in-out;
+}
+.nav-text:hover {
+  background-position: 0%;
+}
+.nav-text:hover:before {
+  width: 100%;
+}
+
+@media(max-width: 600px) {
+  .logobrand{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+}
+.arbitech-box{
+    background-color: #cccccc;
+    color: black;
+    padding: 0px 20px;
+    font-weight: 900;
+    font-size: 15px;
+    margin-top: -3px;
+    letter-spacing: 1px;
+    font-family: 'El Messiri', sans-serif;
+    border-radius: 40px;
+}
+}
+@media(max-width: 480px){
+  .logobrand{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+}
+.arbitech-box{
+    background-color: #cccccc;
+    color: black;
+    padding: 0px 15px;
+    font-weight: 800;
+    font-size: 14px;
+    margin-top: -3px;
+    letter-spacing: 1px;
+    font-family: 'El Messiri', sans-serif;
+    border-radius: 40px;
+}
+}

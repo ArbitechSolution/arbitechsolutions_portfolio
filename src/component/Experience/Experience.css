@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+.container12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  /*   max-width: 1200px; */
+  /*   margin: 40px 0; */
+  }
+   .container12 .card {
+    position: relative;
+    max-width: 320px;
+    height: 300px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    /* margin: 30px; */
+    background-color: #696969;
+    transition: 0.5s;
+  }
+
+  .container12 .card:nth-child(1) .box .content a {
+    background: #2196f3;
+  }
+
+   .container12 .card:nth-child(2) .box .content a {
+    background: #e91e63;
+  }
+   .container12 .card:nth-child(3) .box .content a {
+    background: #23c186;
+  }
+   .container12 .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+   .container12 .card .box:hover {
+    transform: translateY(-50px);
+  }
+
+   .container12 .card .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+   .container12 .card .box .content {
+    padding: 20px;
+    text-align: center;
+  }
+
+   .container12 .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.1);
+  }
+
+   .container12 .card .box .content h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+  }
+
+   .container12 .card .box .content p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: 0.5s;
+  }
+
+   .container12 .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+   .container12 .card .box .content a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: rgb(255, 255, 255);
+    color: #000;
+  }
+
+  .exprience-image{
+    animation: rotateY 4s linear infinite;
+    /* transform: translateX(180px) rotate(45deg);
+    animation: rotateY 6s linear infinite; */
+    /* animation: rotate-vert-center 8s infinite linear; */
+    /* animation: rotate-vert-center 3.5s cubic-bezier(.455,.03,.515,.955) infinite both; */
+}
+
+@keyframes rotateY {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+
+
+
+
+  .progress{
+    width: 120px;
+    height: 120px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+.progress:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .progress-left{
+    left: 0;
+}
+.progress .progress-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    /* background: #2a2b2f; */
+    font-size: 24px;
+    color: rgb(228,77,38);
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: -8%;
+    left: 5%;
+}
+
+.progress.blue .progress-bar{
+    border-color: rgb(228,77,38);
+}
+.progress.green .progress-bar{
+    border-color: rgb(41,101,241);
+}
+.progress.pink .progress-bar{
+    border-color: rgb(85,60,123);
+}
+.progress.material .progress-bar{
+    border-color: rgb(0,177,255);
+}
+.progress.javascript .progress-bar{
+    border-color: rgb(230,199,47);
+}
+.progress.reactjs .progress-bar{
+    border-color: rgb(96,218,251);
+}
+.progress.redux .progress-bar{
+    border-color: rgb(118,74,188);
+}
+.progress.node .progress-bar{
+    border-color: rgb(129,189,4);
+}
+.progress.solidity .progress-bar{
+    border-color: rgb(1,200,83);
+}
+.progress.blue .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress .progress-value1{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    /* background: #2a2b2f; */
+    font-size: 24px;
+    color: rgb(41,101,241);
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: -8%;
+    left: 5%;
+}
+.progress.green .progress-left .progress-bar{
+    animation: loading-21 1.5s linear forwards 1.8s;
+}
+@keyframes loading-21{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+.progress .progress-value2{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    /* background: #2a2b2f; */
+    font-size: 24px;
+    color: rgb(85,60,123);
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: -8%;
+    left: 5%;
+}
+.progress.pink .progress-left .progress-bar{
+    animation: loading-22 1.5s linear forwards 1.8s;
+}
+@keyframes loading-22{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(159deg);
+        transform: rotate(159deg);
+    }
+}
+
+.progress .progress-value3{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    /* background: #2a2b2f; */
+    font-size: 24px;
+    color: rgb(0,177,255);
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: -8%;
+    left: 5%;
+}
+
+.progress.material .progress-left .progress-bar{
+    animation: loading-23 1.5s linear forwards 1.8s;
+}
+@keyframes loading-23{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(124deg);
+        transform: rotate(124deg);
+    }
+}
+
+.progress .progress-value4{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    /* background: #2a2b2f; */
+    font-size: 24px;
+    color: rgb(230,199,47);
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: -8%;
+    left: 5%;
+}
+.progress.javascript .progress-left .progress-bar{
+    animation: loading-24 1.5s linear forwards 1.8s;
+}
+@keyframes loading-24{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(130deg);
+        transform: rotate(130deg);
+    }
+}
+.progress .progress-value5{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    /* background: #2a2b2f; */
+    font-size: 24px;
+    color: rgb(96,218,251);
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: -8%;
+    left: 5%;
+}
+.progress.reactjs .progress-left .progress-bar{
+    animation: loading-26 1.5s linear forwards 1.8s;
+}
+@keyframes loading-26{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(159deg);
+        transform: rotate(159deg);
+    }
+}
+.progress .progress-value7{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    /* background: #2a2b2f; */
+    font-size: 24px;
+    color: rgb(118,74,188);
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: -8%;
+    left: 5%;
+}
+
+.progress.redux .progress-left .progress-bar{
+    animation: loading-27 1.5s linear forwards 1.8s;
+}
+@keyframes loading-27{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(124deg);
+        transform: rotate(124deg);
+    }
+}
+
+.progress .progress-value8{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    /* background: #2a2b2f; */
+    font-size: 24px;
+    color: rgb(129,189,4);
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: -8%;
+    left: 5%;
+}
+.progress.node .progress-left .progress-bar{
+    animation: loading-28 1.5s linear forwards 1.8s;
+}
+@keyframes loading-28{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(130deg);
+        transform: rotate(130deg);
+    }
+}
+.progress .progress-value9{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    /* background: #2a2b2f; */
+    font-size: 24px;
+    color: rgb(1,200,83);
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: -8%;
+    left: 5%;
+}
+.progress.solidity .progress-left .progress-bar{
+    animation: loading-29 1.5s linear forwards 1.8s;
+}
+@keyframes loading-29{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(159deg);
+        transform: rotate(159deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
+}
+
+@media(max-width: 480px){
+    .container12 .card .box .content h3 {
+        font-size: 4.8rem;
+        color: #fff;
+        z-index: 1;
+        transition: 0.5s;
+        margin-bottom: 15px;
+      }
+      .container12 .card {
+        position: relative;
+        max-width: 360px;
+        height: 300px;
+        box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+          inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+          5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        /* margin: 30px; */
+        background-color: #696969;
+        transition: 0.5s;
+      }
+}

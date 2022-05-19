@@ -1,0 +1,146 @@
+.cont-width{
+    height: 550px;
+}
+.home-h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.home-p{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.button-container-2 {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+  overflow: hidden;
+  border: 1px solid rgb(255, 255, 255);
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+.button-container-2 button {
+  width: 101%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  -webkit-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
+  border: none;
+  color: rgb(3, 3, 3);
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(29) forwards;
+  animation: ani2 0.7s steps(29) forwards;
+  border: 2px solid white;
+}
+.button-container-2 button:hover {
+  -webkit-animation: ani 0.7s steps(29) forwards;
+  animation: ani 0.7s steps(29) forwards;
+  border: 2px solid white;
+}
+
+.mas {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 101%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 20px;
+  margin-top: 10px;
+  overflow: hidden;
+  font-weight: bold;
+
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@media(max-width: 600px){
+    .home-h3{
+        font-size: 27px;
+        font-weight: 700;
+        color: white;
+    }
+    .home-p{
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+    }
+}
+@media(max-width: 480px){
+    .home-h3{
+        font-size: 20px;
+        font-weight: 900;
+        color: white;
+    }
+    .home-p{
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+    }
+}
+@media(max-width: 400px){
+    .home-h3{
+        font-size: 18px;
+        font-weight: 900;
+        color: white;
+    }
+    .home-p{
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+    }
+}
